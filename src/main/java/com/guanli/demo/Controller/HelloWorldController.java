@@ -1,12 +1,15 @@
 package com.guanli.demo.Controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
+@RequestMapping("/login")
 public class HelloWorldController {
-    @RequestMapping("/helloWorld")
-    public String out() {
-        return "Hello World my ysq";
+    @RequestMapping("/index")
+    public String login() {
+        return "login/index";
     }
 }
